@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lpnu.vasyliev.credit.controller.LoansManagerController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="618.0" style="-fx-background-color: #00BDFF;">
+         <children>
+            <Button fx:id="button_execute" layoutX="321.0" layoutY="129.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: #FED700;" text="Execute">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_back_to_main" layoutX="14.0" layoutY="357.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="148.0" style="-fx-background-color: transepernt;" text="Back to main menu" textFill="#1111eb" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_overview_offers" layoutX="458.0" layoutY="357.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="126.0" style="-fx-background-color: transepernt;" text="Overview offers" textFill="#1111eb" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <TableView fx:id="active_loans_table" layoutX="3.0" layoutY="186.0" prefHeight="151.0" prefWidth="594.0">
+               <columns>
+                  <TableColumn fx:id="id_col" prefWidth="40.0" text="Id" />
+                  <TableColumn fx:id="current_debt_sum_col" prefWidth="120.0" text="Current debt sum" />
+                  <TableColumn fx:id="time_left_col" text="Time left" />
+                  <TableColumn fx:id="current_percentage_col" prefWidth="128.0" text="Current percentage" />
+                  <TableColumn fx:id="debtor_login_col" prefWidth="88.0" text="Debtor login" />
+                  <TableColumn fx:id="offer_id_col" prefWidth="74.0" text="Offer id" />
+                  <TableColumn fx:id="bank_id_col" prefWidth="69.0" text="Bank id" />
+               </columns>
+            </TableView>
+            <Label layoutX="82.0" layoutY="14.0" prefHeight="41.0" prefWidth="132.0" text="Pick an option:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rb_take_a_loan" layoutX="52.0" layoutY="71.0" mnemonicParsing="false" text="Take a loan">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rb_pay_a_loan" layoutX="52.0" layoutY="100.0" mnemonicParsing="false" text="Pay a loan">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rb_extend_credit_line" layoutX="52.0" layoutY="126.0" mnemonicParsing="false" text=" Extend credit line">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rb_update_loan" layoutX="52.0" layoutY="153.0" mnemonicParsing="false" text="Update loans">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </RadioButton>
+            <ImageView fitHeight="74.0" fitWidth="83.0" layoutX="526.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/images.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="221.0" layoutY="71.0" prefHeight="41.0" prefWidth="178.0" text="Enter target loan id:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_loan_id" layoutX="373.0" layoutY="74.0" prefHeight="34.0" prefWidth="52.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

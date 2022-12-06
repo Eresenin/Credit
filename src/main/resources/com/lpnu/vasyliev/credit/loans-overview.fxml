@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lpnu.vasyliev.credit.controller.LoansOverviewController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="618.0" style="-fx-background-color: #00BDFF;">
+         <children>
+            <Button fx:id="button_show_offers" layoutX="236.0" layoutY="129.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="132.0" style="-fx-background-color: #FED700;" text="Show offers">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="89.0" layoutY="21.0" prefHeight="41.0" prefWidth="178.0" text="Set minimal debt sum:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_back_to_main" layoutX="14.0" layoutY="357.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="148.0" style="-fx-background-color: transepernt;" text="Back to main menu" textFill="#1111eb" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_manage_loans" layoutX="474.0" layoutY="357.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: transepernt;" text="Manage loans" textFill="#1111eb" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="88.0" layoutY="61.0" prefHeight="41.0" prefWidth="236.0" text="Set maximal month percentage:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_max_month_percentage" layoutX="342.0" layoutY="69.0" prefHeight="34.0" prefWidth="132.0" />
+            <TableView fx:id="offersTable" layoutX="3.0" layoutY="185.0" prefHeight="164.0" prefWidth="594.0">
+              <columns>
+                <TableColumn fx:id="id_col" prefWidth="40.0" text="Id" />
+                <TableColumn fx:id="debt_sum_col" prefWidth="70.0" text="Debt sum" />
+                  <TableColumn fx:id="debt_period_col" prefWidth="76.0" text="Debt period" />
+                  <TableColumn fx:id="percentage_col" prefWidth="81.0" text="Percentage" />
+                  <TableColumn fx:id="pen_percentage_col" prefWidth="138.0" text="Penalty pecentage" />
+                  <TableColumn fx:id="extension_period_col" prefWidth="125.0" text="Extension period" />
+                  <TableColumn fx:id="bank_id_col" prefWidth="69.0" text="Bank id" />
+              </columns>
+            </TableView>
+            <TextField fx:id="tf_min_debt_sum" layoutX="342.0" layoutY="24.0" prefHeight="34.0" prefWidth="132.0" />
+            <ImageView fitHeight="74.0" fitWidth="83.0" layoutX="529.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/images.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
