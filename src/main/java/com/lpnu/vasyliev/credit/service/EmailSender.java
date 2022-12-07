@@ -12,8 +12,8 @@ public  class EmailSender {
     private static final Logger logger = LoggerFactory.getLogger(EmailSender.class);
     private static final String PORT="465";
     private static final String HOST="smtp.ukr.net";
-    private static final String PASSWORD="eXLE5kg6KOdy0bIJ";
-    private static final String USER="bohdanzorii@ukr.net";
+    private static final String PASSWORD="zDnj6b3dB@wQNGS";
+    private static final String USER="itsrobertpaulson@ukr.net";
     private static final String ENCODING="UTF-8";
 
 
@@ -42,7 +42,7 @@ public  class EmailSender {
             Authenticator auth = new Authenticator() {
                 @Override
                 protected PasswordAuthentication getPasswordAuthentication() {
-                    return new PasswordAuthentication("eresenin@gmail.com", "eXLE5kg6KOdy0bIJ");
+                    return new PasswordAuthentication("itsrobertpaulson@ukr.net", "zDnj6b3dB@wQNGS");
                 }
             };
 
