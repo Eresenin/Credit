@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 
 public class ApplicationStarter extends Application {
-    private static Logger logger = LoggerFactory.getLogger(ApplicationStarter.class); // xd
+    private static Logger logger = LoggerFactory.getLogger(ApplicationStarter.class);
     @Override
     public void start(Stage stage) throws IOException {
         logger.info("entered", this);

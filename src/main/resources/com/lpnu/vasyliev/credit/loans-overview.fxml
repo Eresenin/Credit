@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lpnu.vasyliev.credit.controller.LoansOverviewController">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lpnu.vasyliev.credit.controller.main_menu.LoansOverviewController">
    <children>
-      <AnchorPane prefHeight="400.0" prefWidth="618.0" style="-fx-background-color: #00BDFF;">
+      <AnchorPane prefHeight="400.0" prefWidth="618.0" style="-fx-background-color: #7FFFD4;">
          <children>
             <Button fx:id="button_show_offers" layoutX="236.0" layoutY="129.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="132.0" style="-fx-background-color: #FED700;" text="Show offers">
                <font>

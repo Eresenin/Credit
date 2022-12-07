@@ -11,9 +11,9 @@ import java.util.Properties;
 public  class EmailSender {
     private static final Logger logger = LoggerFactory.getLogger(EmailSender.class);
     private static final String PORT="465";
-    private static final String HOST="smtp.gmail.com";
+    private static final String HOST="smtp.ukr.net";
     private static final String PASSWORD="eXLE5kg6KOdy0bIJ";
-    private static final String USER="eresenin@gmail.com";
+    private static final String USER="bohdanzorii@ukr.net";
     private static final String ENCODING="UTF-8";
 
 

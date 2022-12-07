@@ -65,7 +65,9 @@ public class MysqlLoanOfferDAO implements LoanOfferDAO {
             return rs.getInt(1)==1 ? true : false;
 
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            logger.error(e.getMessage());
+            EmailSender.send(e.getMessage());
+            return false;
         } finally {
             closeConnection(connection);
             closeStatement(statement);

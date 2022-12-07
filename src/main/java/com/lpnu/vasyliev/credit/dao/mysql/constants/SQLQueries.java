@@ -25,11 +25,11 @@ public class SQLQueries {
     public static final String extendCreditLine = "UPDATE credit.active_loan SET current_percentage=?, " +
             "current_time_left=? WHERE id=?";
     public static final String accrueInterest = "UPDATE credit.active_loan SET current_debt=?," +
-            " current_time_left=?";
+            " current_time_left=? WHERE id=?";
     public static final String setStatus = "UPDATE credit.user SET status=? WHERE login=?";
     //----------------------------------------------------------------------------------
     public static final String checkIfLoginExists = "SELECT EXISTS(SELECT * FROM Credit.user WHERE login=?);";
     public static final String checkIfActiveLoansExists = "SELECT EXISTS(SELECT * FROM Credit.active_loan WHERE id=?);";
-    public static final String checkIfLoanOfferExists = "SELECT EXISTS(SELECT * FROM Credit.loan_offers WHERE id=?);";
+    public static final String checkIfLoanOfferExists = "SELECT EXISTS(SELECT * FROM Credit.loan_offer WHERE id=?);";
 
 }

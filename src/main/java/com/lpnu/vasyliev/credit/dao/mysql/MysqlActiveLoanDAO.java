@@ -67,11 +67,13 @@ public class MysqlActiveLoanDAO implements ActiveLoanDAO {
                 if(activeLoan.getCurrentTimeLeftInMonths()-monthsPassed<=0){
                     userDAO.handleOverdue(activeLoan);
                 }
+
                 statement = connection.prepareStatement(SQLQueries.accrueInterest);
                 statement.setInt(1, (int)Math.ceil(activeLoan.getCurrentDebtAmount()+
                         (activeLoan.getCurrentPercentagePerMonth() * 0.01 *
                                 activeLoan.getCurrentDebtAmount() * monthsPassed)));
                 statement.setInt(2, activeLoan.getCurrentTimeLeftInMonths() - monthsPassed);
+                statement.setInt(3, activeLoan.getId());
                 statement.executeUpdate();
             }
         } catch (SQLException e) {

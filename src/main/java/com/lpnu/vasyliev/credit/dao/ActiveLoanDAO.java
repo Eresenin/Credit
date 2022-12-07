@@ -8,7 +8,7 @@ public interface ActiveLoanDAO {
     ActiveLoanDAO actualInstance = new MysqlActiveLoanDAO();
     boolean addActiveLoan(LoanOffer loanOffer);
 
-    boolean accrueInterest(int monthsPassed, String userDao);
+    boolean accrueInterest(int monthsPassed, String userLogin);
     void payTheLoan(int moneyAmount, ActiveLoan activeLoan);
     public boolean activeLoanExists(int id);
     boolean extendCreditLine(ActiveLoan activeLoan);

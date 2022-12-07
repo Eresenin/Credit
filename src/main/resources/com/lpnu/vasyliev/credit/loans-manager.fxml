@@ -5,18 +5,17 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lpnu.vasyliev.credit.controller.LoansManagerController">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lpnu.vasyliev.credit.controller.main_menu.LoansManagerController">
    <children>
-      <AnchorPane prefHeight="400.0" prefWidth="618.0" style="-fx-background-color: #00BDFF;">
+      <AnchorPane prefHeight="314.0" prefWidth="600.0" style="-fx-background-color: #7FFFD4;">
          <children>
-            <Button fx:id="button_execute" layoutX="321.0" layoutY="129.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: #FED700;" text="Execute">
+            <Button fx:id="button_execute" layoutX="278.0" layoutY="64.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: #FED700;" text="Execute">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -57,7 +56,7 @@
                   <Font name="System Italic" size="14.0" />
                </font>
             </RadioButton>
-            <RadioButton fx:id="rb_extend_credit_line" layoutX="52.0" layoutY="126.0" mnemonicParsing="false" text=" Extend credit line">
+            <RadioButton fx:id="rb_extend_credit_line" layoutX="52.0" layoutY="126.0" mnemonicParsing="false" text="Extend credit line">
                <font>
                   <Font name="System Italic" size="14.0" />
                </font>
@@ -72,12 +71,11 @@
                   <Image url="@img/images.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="221.0" layoutY="71.0" prefHeight="41.0" prefWidth="178.0" text="Enter target loan id:">
+            <Label fx:id="label_wallet_balance" layoutX="278.0" layoutY="136.0" prefHeight="34.0" prefWidth="232.0">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="tf_loan_id" layoutX="373.0" layoutY="74.0" prefHeight="34.0" prefWidth="52.0" />
          </children>
       </AnchorPane>
    </children>

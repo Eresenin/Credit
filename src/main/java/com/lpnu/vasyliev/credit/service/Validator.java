@@ -32,4 +32,10 @@ public class Validator {
             return false;
         }
     }
+    public static boolean validatePercent(String intLine){
+       if(validateInt(intLine))
+           return Integer.valueOf(intLine)<100;
+       return false;
+    }
+
 }
